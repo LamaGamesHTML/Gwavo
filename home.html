@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gwavo - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <h2 id="welcome"></h2>
+    <div id="card-container"></div>
+    <div class="buttons">
+      <button id="pass">❌ Pass</button>
+      <button id="like">💖 Like</button>
+    </div>
+    <div id="chat-box" style="display: none;">
+      <h3>Chat with <span id="chatUser"></span></h3>
+      <div id="messages" style="max-height: 200px; overflow-y: scroll;"></div>
+      <input type="text" id="chatInput" placeholder="Type message..." />
+      <button onclick="sendChat()">Send</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
